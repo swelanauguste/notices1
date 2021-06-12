@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block head_title %}
+    
+{% endblock head_title %}
+
+
+
+{% block extrahead %}{{ block.super }}
+
+{% endblock %}
+
+{% block content %}
+{% for object in object_list %}
+    {{object.title }}
+{% endfor %}
+
+
+{% endblock %}
