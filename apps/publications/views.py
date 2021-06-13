@@ -7,6 +7,7 @@ from .models import Publication
 
 class PublicationDetail(HitCountDetailView):
     model = Publication
+    queryset = Publication.published_objects.all()
     count_hit = True
 
 
